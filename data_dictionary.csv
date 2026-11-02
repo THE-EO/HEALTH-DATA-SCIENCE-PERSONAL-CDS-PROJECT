@@ -1,0 +1,16 @@
+variable,original_column,type,unit,description,allowed_values_or_range,source,missing_values
+serial_number,S/N,integer,none,Row number in the original attendance list,1 to 50,Collected,None
+participant_id,Participant Name,text,none,Pseudonymised participant code that replaces the name,Participant001 to Participant050,"Collected, then names replaced by codes",None
+age,Age,number,years,Age at screening; NaN when only 'Ad' (adult) was recorded,10 to 100 (review range),Collected; 'Ad' converted to NaN,3 values (the 'Ad' participants)
+sex,Sex,category,none,Recorded sex of the participant,"Female, Male",Collected as F and M; recoded,None
+glucose_mgdl,FBS/RBS (mg/dL),number,mg/dL,Blood glucose reading; fasting or random test not recorded,40 to 600 (review range),Collected,None
+systolic_bp,Systolic (mmHg),number,mmHg,Upper blood pressure number (single reading),70 to 250 (review range),Collected,None
+diastolic_bp,Diastolic (mmHg),number,mmHg,Lower blood pressure number (single reading),40 to 150 (review range),Collected,None
+screening_date,Date,date,day,Date of the screening visit,12 to 15 Sep 2026,Collected as text; converted to a date,None
+location,Location,category,none,Screening location,"Echolab, DDPA Estate, Lifestream",Collected,None
+age_unspecified,(derived),boolean,none,True when age was recorded as 'Ad',True or False,Derived in Part 1,None
+pulse_pressure,(derived),number,mmHg,systolic_bp minus diastolic_bp,10 to 150 (review range),Derived in Part 1,None
+age_group,(derived),category,years,"Descriptive age band, not a clinical category","<30, 30-39, 40-49, 50+, Unspecified",Derived in Part 1,None (Unspecified is a category)
+bp_band,(derived),category,none,"Reading range from 2017 ACC/AHA categories, based on ONE reading, not a diagnosis","Normal, Elevated, Stage 1, Stage 2 range",Derived in Part 2,None
+glucose_band,(derived),category,mg/dL,"Numeric glucose band using ADA fasting thresholds; test type unknown, not a diagnosis","Below 100, 100 to 125, 126 and above",Derived in Part 2,None
+bp_stage1_or_higher,(derived),boolean,none,True when bp_band is Stage 1 range or Stage 2 range,True or False,Derived in Part 2,None
