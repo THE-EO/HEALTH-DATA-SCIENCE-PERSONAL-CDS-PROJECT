@@ -93,6 +93,3 @@ Code is released under the MIT License (see `LICENSE`). The real data are not co
 ## References
 
 - Whelton PK, et al. 2017 ACC/AHA guideline for the prevention, detection, evaluation, and management of high blood pressure in adults. Hypertension. 2018;71(6):e13-e115.
-- American Diabetes Association. Standards of Care in Diabetes, 2025. Diabetes Care. 2025;48(Suppl 1).
-- Efron B. Bootstrap methods: another look at the jackknife. Annals of Statistics. 1979;7(1):1-26.
-- Holm S. A simple sequentially rejective multiple test procedure. Scandinavian Journal of Statistics. 1979;6(2):65-70.
