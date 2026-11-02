@@ -1,6 +1,3 @@
-# HEALTH-DATA-SCIENCE-PERSONAL-CDS-PROJECT
-Descriptive and exploratory analysis of a 50-participant community blood pressure and blood glucose screening
-
 # Know Your Numbers: Blood Pressure and Blood Glucose Screening Analysis
 
 A reproducible descriptive and exploratory analysis of a 50-participant community blood pressure and blood glucose screening held in Asaba, Delta State, Nigeria, on 12 to 15 September 2026 at three locations (Echolab, DDPA Estate and Lifestream). Built as an NYSC Community Development Service (CDS) health project and a data science portfolio piece.
